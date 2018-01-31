@@ -7,13 +7,14 @@ function init() {
     body.addEventListener('keydown', function(e) {
       if (parseInt(e.detail || e.which) === code[index]){
         index++;
-      } if (index === code.length) {
+      } 
+      
+      if (index === code.length - 1) {
       alert('Congrats, you did it!');
       index = 0;
-      }
-      else {
+      } else {
         index = 0;
       }
-    }, true);
+    });
       
 }
